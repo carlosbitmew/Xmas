@@ -5,58 +5,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>The rest of Xmas</title>
+    <script src="/js/jquery-3.3.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="count-down.js"></script>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
 </head>
 
 <body>
-    <div class="box">
-        <h1>The rest of Xmas</h1>
-        <div class="time" id="d"></div>
-        <div class="time" id="h"></div>
-        <div class="time" id="m"></div>
-        <div class="time" id="s"></div>
-    </div>
-    <div class="text-box">
-        <div class="time">Day</div>
-        <div class="time">Hour</div>
-        <div class="time">Minute</div>
-        <div class="time">Second</div>
+    <div class="row text-center">
+        <div class="col-sm-12">
+            <h1>The rest of Xmas</h1>
+            <div class="row">
+                <div class="col-sm-3 time">
+                    <div id="d"></div>
+                    <div>Day</div>
+                </div>
+                <div class="col-sm-3 time">
+                    <div id="h"></div>
+                    <div>Hour</div>
+                </div>
+                <div class="col-sm-3 time">
+                    <div id="m"></div>
+                    <div>Minute</div>
+                </div>
+                <div class="col-sm-3 time">
+                    <div id="s"></div>
+                    <div>Second</div>
+                </div>
+            </div>
+        </div>
+
     </div>
 
-    <script src="daojishi.js"></script>
+
+
+
 </body>
 
 </html>
 
 <style>
-    body{
+    body {
         background: black;
     }
-    .box{
-        height: 220px;
-        width: 1000px;
-        position: relative;
-        margin: 300px auto 0 auto;
-        text-align: center;
-        color: white;
-    }
-    h1{
+
+    h1 {
         font-size: 80px;
         color: white;
     }
+
+    .center {
+        margin: 0 auto;
+        text-align: center;
+    }
+
     .time {
         display: inline-block;
-        float: left;
-        width: 250px;
-        height: 80px;
         font-size: 44px;
-    }
-    .text-box{
-        height: 200px;
-        width: 1000px;
-        position: relative;
-        margin: 0 auto 0 auto;
-        text-align: center;
+        height: auto;
+        width: 200px;
         color: white;
     }
 </style>
